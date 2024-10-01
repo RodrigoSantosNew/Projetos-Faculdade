@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrantes</title>
+    <style>
+        #pai{
+        display: flex;
+    
+        }
+        #mae{
+            display: flex;
+    
+        }
+        #a{
+        
+            width: 100px ;
+            height: 100px;
+            background-color: blue;
+        }
+        #b{
+            width: 100px ;
+            height: 100px;
+            background-color: green; 
+        }
+        #c{
+            width: 100px ;
+            height: 100px;
+            background-color:yellow;
+        }
+        #d{
+            width: 100px ;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--maior dificuldade foi no css mas tive umas aulas no youtube e aprendi  a movimentar os elementos com flex-->
+    <!--nao sei como usar uma função para resolver os problemas dos quadrantes tive que fazer uma funçao para
+         cada quadrante espero futuramente aprender mais sobre as funçoes-->
+         <!--o css ficou interno pois no evio para o moodle esta podendo ser enviado um unico arquivo-->
+    <div id="pai">
+    <div id="a"  onmouseenter="entroa()">Quandrante A</div>
+    <div id="b" onmouseenter="entrob()">Quandrante B</div>
+    </div>
+    <div id="mae">
+    <div id="c" onmouseenter="entroc()">Quandrante C</div>
+    <div id="d" onmouseenter="entrod()">Quandrante D</div>
+    </div>
+    <div> <legend>Seu Mouse Esta no Quadrante:</legend><input type="text" id="saida"></div>
+    <script>
+        var a=document.getElementById('a')
+        var b=document.getElementById("b")
+        var c=document.getElementById('c')
+        var d=document.getElementById('d')
+    function entroa(){
+        document.getElementById("saida").value='A'
+    }
+    function entrob(){
+        document.getElementById('saida').value='B'
+    }
+    function entroc(){
+        document.getElementById('saida').value='C'
+    }
+    function entrod(){
+        document.getElementById('saida').value='D'
+    }
+
+
+    
+    </script>
+</body>
+</html>
